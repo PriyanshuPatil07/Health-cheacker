@@ -1,0 +1,50 @@
+print("--------------------------------------------")
+print("Health Symptom Checker")
+print("--------------------------------------------\n")
+
+temperature = float(input("What's your body temperature in Celsius? "))
+cough = input("Do you have a cough? (y/n): ")
+headache = input("Are you having a headache? (y/n): ")
+tired = input("Are you feeling tired or low on energy? (y/n): ")
+
+print("\n---------- Summary of What You Entered ----------")
+
+if temperature >= 37.5:
+    print("Your temperature seems a bit high.")
+else:
+    print("Your temperature looks normal.")
+
+if cough.lower() == 'y':
+    print("You mentioned you have a cough.")
+else:
+    print("No cough reported.")
+
+if headache.lower() == 'y':
+    print("You said you're having a headache.")
+else:
+    print("No headache mentioned.")
+
+if tired.lower() == 'y':
+    print("You're feeling tired.")
+else:
+    print("You are not feeling tired.")
+
+print("\n---------- Simple Home Comfort Tips ----------")
+
+if temperature >= 37.5:
+    print("Try to drink plenty of water and rest a bit.")
+    print("Cool, comfortable clothing can help you feel better.")
+
+if cough.lower() == 'y':
+    print("Warm drinks like herbal tea or warm water can feel soothing.")
+    print("Try to avoid cold air or dust if possible.")
+
+if headache.lower() == 'y':
+    print("Resting your eyes for a while may help.")
+    print("Sitting in a quiet, calm place can make you feel better.")
+
+if tired.lower() == 'y':
+    print("Try taking a short break or relaxing for a few minutes.")
+    print(" Drinking water and breathing deeply can help refresh you.")
+
+print("\nThanks for using this Health checker!")
